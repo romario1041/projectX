@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">AplicacaoRevisao</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!--Title words-->
+    <string name="action">EA</string>
+    <string name="fight">Ubsoft</string>
+    <string name="horror">Rockstar</string>
+    <string name="party">Bethesda</string>
+
+
+    <!--Content words-->
+    <string name="content">The Elder Scrolls V: Skyrim é um RPG eletrônico desenvolvido pela Bethesda Games Studios e publicado pela Bethesda Softworks. É o quinto jogo principal da série The Elder Scrolls, seguindo The Elder Scrolls IV: Oblivion.</string>
+    <string name="detail">The Elder Scrolls V: Skyrim é um RPG eletrônico desenvolvido pela Bethesda Games Studios e publicado pela Bethesda Softworks. É o quinto jogo principal da série The Elder Scrolls, seguindo The Elder Scrolls IV: Oblivion. Foi lançado em 11 de novembro de 2011 para PlayStation 3, Xbox 360 e PC. É o primeiro jogo ocidental da história a receber 40/40 (nota máxima) na conceituada revista japonesa Famitsu. O Jogo Conseguiu três prêmios no VGA 2011, incluindo melhor jogo do ano.[1]
+
+Os acontecimentos do jogo passam-se duzentos anos depois da, já quase esquecida, crise de Oblivion, no ano 201 da quarta era (4E 201) na província de Skyrim, no norte de Tamriel, e 30 anos após a mais recente Grande Guerra, onde o Aldmeri Dominion e o Império lutaram arduamente, mas que quase extinguiu os humanos de Tamriel, e para evitar tal derrota, acordaram com a Aldmeri Dominion, rendendo duas forças e sujeitando-se as suas exigências.
+
+Skyrim é a terra natal de um povo bravo chamados de Nords (uma raça de humanos) onde além da Grande Guerra, irrompeu uma guerra civil após o assassinato do Alto Rei de Skyrim, Torygg. E diante de todas estas guerras e problemas, a província se encontra dividida: de um lado, os StormCloaks, rebeldes comandados por Ulfric que buscam a independência de Skyrim perante o império; Do outro, os Imperiais, militares comandados por Tullius e aliados ao império.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
