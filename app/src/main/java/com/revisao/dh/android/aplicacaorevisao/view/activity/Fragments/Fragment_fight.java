@@ -1,7 +1,6 @@
 package com.revisao.dh.android.aplicacaorevisao.view.activity.Fragments;
 
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,7 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.revisao.dh.android.aplicacaorevisao.adapter.AdapterCategory;
+import com.revisao.dh.android.aplicacaorevisao.controler.adapter.AdapterCategory;
 import com.revisao.dh.android.aplicacaorevisao.R;
 import com.revisao.dh.android.aplicacaorevisao.helpers.ClickListener;
 import com.revisao.dh.android.aplicacaorevisao.model.ModelTemp;
@@ -69,9 +68,9 @@ public class Fragment_fight extends Fragment implements ClickListener {
 
 
 
-        Context context = getContext();
+
         RecyclerView recyclerView = v.findViewById(R.id.recycle);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(context);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(v.getContext());
         AdapterCategory adapterCategory = new AdapterCategory(lista,v.getContext());
         adapterCategory.setClickListener(this);
         recyclerView.setLayoutManager(layoutManager);
@@ -81,7 +80,7 @@ public class Fragment_fight extends Fragment implements ClickListener {
 
     @Override
     public void onClick(View view, int position) {
-        ModelTemp minasProgramacao = lista.get(position);
+        ModelTemp modelTemp = lista.get(position);
         Intent intent = new Intent(view.getContext(), ActivityDetail.class);
         startActivity(intent);
     }

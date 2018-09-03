@@ -1,2 +1,0 @@
-# projectX
-person project

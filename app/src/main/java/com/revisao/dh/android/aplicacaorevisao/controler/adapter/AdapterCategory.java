@@ -1,4 +1,4 @@
-package com.revisao.dh.android.aplicacaorevisao.adapter;
+package com.revisao.dh.android.aplicacaorevisao.controler.adapter;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -19,12 +19,12 @@ import java.util.List;
 
 public class AdapterCategory extends RecyclerView.Adapter<AdapterCategory.ViewHolder> {
 
-    List<ModelTemp> words;
+    List<ModelTemp> modelTempListl;
     Context context;
     ClickListener clickListener;
 
-    public AdapterCategory(List<ModelTemp> words, Context context){
-        this.words = words;
+    public AdapterCategory(List<ModelTemp> modelTempListl, Context context){
+        this.modelTempListl = modelTempListl;
         this.context = context;
     }
     @NonNull
@@ -36,13 +36,13 @@ public class AdapterCategory extends RecyclerView.Adapter<AdapterCategory.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull AdapterCategory.ViewHolder holder, int position) {
-            ModelTemp modelTemp = words.get(position);
+            ModelTemp modelTemp = modelTempListl.get(position);
             holder.bind(modelTemp.getTitle(), modelTemp.getImage(), modelTemp.getContent());
     }
 
     @Override
     public int getItemCount() {
-        return words.size();
+        return modelTempListl.size();
     }
 
     public void setClickListener(ClickListener clickListener) {
@@ -77,9 +77,7 @@ public class AdapterCategory extends RecyclerView.Adapter<AdapterCategory.ViewHo
 
         @Override
         public void onClick(View v) {
-
                 if (clickListener != null) clickListener.onClick(v, getAdapterPosition());
-
         }
     }
 }

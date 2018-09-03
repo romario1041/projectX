@@ -5,6 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".view.activity.Fragments.Fragment_party">
 
-    <include layout="@layout/recycler"/>
+    <include layout="@layout/list"/>
 
 </FrameLayout>

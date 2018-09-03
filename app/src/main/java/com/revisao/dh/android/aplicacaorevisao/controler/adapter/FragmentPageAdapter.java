@@ -1,4 +1,4 @@
-package com.revisao.dh.android.aplicacaorevisao.adapter;
+package com.revisao.dh.android.aplicacaorevisao.controler.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -22,7 +22,6 @@ public class FragmentPageAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
 
-
         return fragmentList.get(position);
     }
 
@@ -31,7 +30,7 @@ public class FragmentPageAdapter extends FragmentPagerAdapter {
         return fragmentList.size();
     }
 
-
+    //Método específico pra usar o tabLayout
     @Override
     public CharSequence getPageTitle(int position){
         return  listFragmentsTitle.get(position);
